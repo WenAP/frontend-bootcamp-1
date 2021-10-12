@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario reto 3</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <h2>1era Evaluación - Bootcamp</h2>
+    <form>
+        <fieldset>
+            <div>
+                <label form="nombres">Ingrese sus nombres</label>
+                <input class="nombres" id="nombres" type="text" placeholder="Nombre" pattern="[a-zA-Z]*" oninvalid="setCustomValidity('Solo admite texto. ')" oninput="setCustomValidity('')" required>
+            </div>
+            <div>
+                <label form="apellidos">Ingrese sus apellidos</label>
+                <input id="apellidos" type="text" placeholder="Apellido" pattern="[a-zA-Z]*" oninvalid="setCustomValidity('Solo admite texto. ')" oninput="setCustomValidity('')" required>
+            </div>
+            <div>
+                <label form="edad">Ingrese su edad</label>
+                <input id="edad" type="number" placeholder="Edad" type="range" min="18" max="80" oninvalid="setCustomValidity('Solo admite edad de 18 a 80. ')" oninput="setCustomValidity('')" required>
+            </div>
+            <div>
+                <label form="especialidad">Especialidad</label>
+                <select name="especialidad" id="especialidad" required>
+                    <option value="0"> -Seleccionar-</option>
+                    <option value="3"> Matematica</option>
+                    <option value="4"> Programación</option>
+                    <option value="3"> Física</option>
+                    <option value="3"> Arte</option>
+                    <option value="2"> Química</option>
+                </select>
+            </div>
+            <div>
+                <label form="tiempoExperiencia">Ingrese cantidad de años de experiencia</label>
+                <input id="tiempoExperiencia" type="number" placeholder="Años de experiencia" type="range" min="1" max="60" oninvalid="setCustomValidity('Solo admite de 1 a 60.')" oninput="setCustomValidity('')" required>
+            </div>
+            <div>
+                <label form="urlLinkdin">Ingrese URL Linkdin</label>
+                <input type="url" placeholder="Ingrese URL Linkdin">
+            </div>
+            <input type="submit" value="Enviar formulario" onclick="agregarLista();">
+        </fieldset>
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>

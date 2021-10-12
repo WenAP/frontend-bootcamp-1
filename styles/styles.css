@@ -1,0 +1,12 @@
+input {
+    border: 2px;
+    border-style: groove;
+    padding: 10px;
+    margin: 5px;
+}
+
+input:focus {
+    display: initial;
+    background-color: lightgreen;
+  }
+  
